@@ -7,14 +7,13 @@ import './App.css';
 class App extends React.Component {
   state= {
     user: [],
-    
+
   }
   
   componentDidMount() {
     axios.get('http://localhost:5000/api/restricted/data')
     .then(res => {
       this.setState({ user: res.data })
-      console.log(res)
     })
     .catch(err => {
       console.log('Sorry there was an error retrieving your data', err.response)
@@ -22,10 +21,9 @@ class App extends React.Component {
   }
   
   render(){
-    console.log(this.state.user)
     return (
       <div className="App">
-        <h1>Working!!</h1>
+        <h1>Username & Password Form</h1>
         <Form>
           <Field type="text" name="username" placeholder="Enter Username" />
           {/* {touched.username && errors.username && (
