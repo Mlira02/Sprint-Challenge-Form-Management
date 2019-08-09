@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { Form, Field, withFormik } from 'formik';
+import { Form, Field, ErrorMessage, withFormik } from 'formik';
 import * as Yup from 'yup';
 import './App.css';
 
@@ -26,13 +26,9 @@ class App extends React.Component {
         <h1>Username & Password Form</h1>
         <Form>
           <Field type="text" name="username" placeholder="Enter Username" />
-          {/* {touched.username && errors.username && (
-            <p className="error">{errors.username}</p>
-          )} */}
+          <ErrorMessage name="username" component="div" />
           <Field type="password" name="password" placeholder="Enter password" />
-          {/* {touched.password && errors.password && (
-            <p className="error">{errors.password}</p>
-          )} */}
+          <ErrorMessage name="password" component="div" />
           <button type="submit">Submit</button>
         </Form>
         <div>

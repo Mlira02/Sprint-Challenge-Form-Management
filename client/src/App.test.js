@@ -13,5 +13,4 @@ describe('<App />', () => {
     app.getAllByText(/Cooking Recipes/i);
   });
   
-
 });
