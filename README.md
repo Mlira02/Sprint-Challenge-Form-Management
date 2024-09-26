@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What are the required parts of class components?
 
+Answer: Required parts of class components are- State & Render
+
 - [ ] Name at least three lifecycle methods?
+
+Answer: CDM (componentDidMount), CDU(ComponentDidUpdate) & CDU(ComponentDidUnmount) 
 
 - [ ] Why are forms used so often in web applications and software?
 
+Answer: Forms are crucial to gathering as much data as possible. Forms can gather opinions of your customers and can register users as members. Most of all data comes from forms!
+
 - [ ] What advantages are there by using a forms library like Formik?
 
+Answer: Formik is very good at making it easy to create forms the way you want to and does a lot of the work behind the scenes like holding state and making change handlers for you!
+
 - [ ] Why do we write tests for our apps?
+
+Answer: Tests are a good way to test and see if anything in your app is functioning correctly. It can be the difference between a functional app and a broken app!
 
 ## Project Set Up
 
